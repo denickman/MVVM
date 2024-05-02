@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8540075F2BE3562800070000 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8540075E2BE3562800070000 /* ViewModel.swift */; };
 		8564022A2BE2109E0097C6DB /* Medium_MVVMApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856402292BE2109E0097C6DB /* Medium_MVVMApp.swift */; };
 		8564022C2BE2109E0097C6DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564022B2BE2109E0097C6DB /* ContentView.swift */; };
 		8564022E2BE2109F0097C6DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8564022D2BE2109F0097C6DB /* Assets.xcassets */; };
 		856402312BE2109F0097C6DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 856402302BE2109F0097C6DB /* Preview Assets.xcassets */; };
+		856402382BE210AE0097C6DB /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856402372BE210AE0097C6DB /* Product.swift */; };
+		8564023D2BE210F70097C6DB /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564023C2BE210F70097C6DB /* ProductListViewModel.swift */; };
+		856402402BE211AB0097C6DB /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8564023F2BE211AB0097C6DB /* Products.swift */; };
+		856402422BE21E600097C6DB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856402412BE21E600097C6DB /* Networking.swift */; };
+		856402442BE21F0A0097C6DB /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856402432BE21F0A0097C6DB /* Container.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8540075E2BE3562800070000 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		856402262BE2109E0097C6DB /* Medium-MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Medium-MVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		856402292BE2109E0097C6DB /* Medium_MVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medium_MVVMApp.swift; sourceTree = "<group>"; };
 		8564022B2BE2109E0097C6DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8564022D2BE2109F0097C6DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		856402302BE2109F0097C6DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		856402372BE210AE0097C6DB /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		8564023C2BE210F70097C6DB /* ProductListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModel.swift; sourceTree = "<group>"; };
+		8564023F2BE211AB0097C6DB /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		856402412BE21E600097C6DB /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		856402432BE21F0A0097C6DB /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		856402282BE2109E0097C6DB /* Medium-MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				8564023E2BE2119C0097C6DB /* Data */,
+				8564023B2BE210BD0097C6DB /* ViewModel */,
+				8564023A2BE210B50097C6DB /* View */,
+				856402392BE210B10097C6DB /* Model */,
 				856402292BE2109E0097C6DB /* Medium_MVVMApp.swift */,
-				8564022B2BE2109E0097C6DB /* ContentView.swift */,
 				8564022D2BE2109F0097C6DB /* Assets.xcassets */,
 				8564022F2BE2109F0097C6DB /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				856402302BE2109F0097C6DB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		856402392BE210B10097C6DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				856402372BE210AE0097C6DB /* Product.swift */,
+				856402412BE21E600097C6DB /* Networking.swift */,
+				856402432BE21F0A0097C6DB /* Container.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8564023A2BE210B50097C6DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8564022B2BE2109E0097C6DB /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8564023B2BE210BD0097C6DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8564023C2BE210F70097C6DB /* ProductListViewModel.swift */,
+				8540075E2BE3562800070000 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8564023E2BE2119C0097C6DB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8564023F2BE211AB0097C6DB /* Products.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +189,12 @@
 			files = (
 				8564022C2BE2109E0097C6DB /* ContentView.swift in Sources */,
 				8564022A2BE2109E0097C6DB /* Medium_MVVMApp.swift in Sources */,
+				856402402BE211AB0097C6DB /* Products.swift in Sources */,
+				856402422BE21E600097C6DB /* Networking.swift in Sources */,
+				856402442BE21F0A0097C6DB /* Container.swift in Sources */,
+				8564023D2BE210F70097C6DB /* ProductListViewModel.swift in Sources */,
+				8540075F2BE3562800070000 /* ViewModel.swift in Sources */,
+				856402382BE210AE0097C6DB /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
